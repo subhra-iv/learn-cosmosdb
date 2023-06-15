@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    azure:
+      cosmos:
+        database: customers
+        populate-query-metrics: true
+        endpoint: https://sd-cosmos-acc-01.documents.azure.com:443/
+        key: WVvYfhO91sYE712NjrBQuOJQBCJOPiaJ3o5ELcJujq90BacpMMbeVcsiDmzue1HidqqIsXa1pilDACDbQA2WFQ==
+server:
+  port: 9002

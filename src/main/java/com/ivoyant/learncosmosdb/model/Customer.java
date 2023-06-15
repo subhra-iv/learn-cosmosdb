@@ -1,7 +1,6 @@
 package com.ivoyant.learncosmosdb.model;
-
-import com.microsoft.azure.spring.data.cosmosdb.core.mapping.Document;
-import com.microsoft.azure.spring.data.cosmosdb.core.mapping.PartitionKey;
+import com.azure.spring.data.cosmos.core.mapping.Container;
+import com.azure.spring.data.cosmos.core.mapping.GeneratedValue;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -10,10 +9,10 @@ import java.lang.annotation.Documented;
 
 @Data
 @AllArgsConstructor
-@Document(collection = "Customer")
+@Container(containerName = "Customer")
 public class Customer {
     @Id
-    @PartitionKey
+    @GeneratedValue
     private String id;
     private String name;
     private String email;
