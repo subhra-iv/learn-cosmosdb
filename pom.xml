@@ -65,6 +65,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>learn-cosmosdb</finalName>
 	</build>
 
 </project>
